@@ -1,0 +1,13 @@
+export const LANDING = '/';
+export const SIGN_UP = '/signup';
+export const SIGN_IN = '/signin';
+export const HOME = '/home';
+export const ACCOUNT = '/account';
+export const ADMIN = '/admin';
+export const ADMIN_DETAILS = '/admin/:id';
+export const PASSWORD_FORGET = '/password-reset';
+export const TEACHER = '/teacher';
+export const FIND_CLASS = '/find-a-class';
+export const OUR_STORY = '/our-story';
+export const PRICING = '/pricing';
+export const BECOME_PARTNER = '/become-a-partner';

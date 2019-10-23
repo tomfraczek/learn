@@ -1,0 +1,51 @@
+@import '../../global/variables';
+
+.mainNav{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  @include container;
+}
+
+.mainNavLogo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  p{
+    font-weight: bold;
+    color: red;
+  }
+  span{
+    color: #333;
+  }
+}
+
+.mainNavList{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+  height: 60px;
+
+  a{
+    padding: 10px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+}
+
+.navSignButtons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  a{
+    &:first-of-type{
+      padding-right:5px;
+    }
+    &:last-of-type{
+      padding-left: 5px;
+    }
+  }
+}

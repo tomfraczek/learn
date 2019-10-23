@@ -1,0 +1,48 @@
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .mainNav {
+      width: 720px; } }
+  @media (min-width: 992px) {
+    .mainNav {
+      width: 940px; } }
+  @media (min-width: 1200px) {
+    .mainNav {
+      width: 1140px; } }
+
+.mainNavLogo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .mainNavLogo p {
+    font-weight: bold;
+    color: red; }
+  .mainNavLogo span {
+    color: #333; }
+
+.mainNavList {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+  height: 60px; }
+  .mainNavList a {
+    padding: 10px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none; }
+
+.navSignButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .navSignButtons a:first-of-type {
+    padding-right: 5px; }
+  .navSignButtons a:last-of-type {
+    padding-left: 5px; }

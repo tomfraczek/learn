@@ -1,0 +1,100 @@
+@import "colours";
+@import "../fonts";
+//@import url(')
+$brown-regular: 'brown-regular', 'Helvetica Neue', Helvetica, sans-serif;
+$brown-thin: 'brown-thin', 'Helvetica Neue', Helvetica, sans-serif;
+
+$tisa-pro-light: 'tisa-pro-light', Georgia, serif;
+$tisa-pro-bold: 'tisa-pro-bold', Georgia, serif;
+
+$bootstrapLineheight: 1.42857;
+
+@mixin heading($font-size: 16px, $colour: inherit) {
+  color: $colour;
+  font-family: $brown-regular;
+  font-size: $font-size;
+  line-height: $bootstrapLineheight;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@mixin brand-name($colour: inherit, $font-size: 16px) {
+  color: $colour;
+  font-family: $brown-regular;
+  font-size: $font-size;
+  line-height: $bootstrapLineheight;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@mixin subheading($font-size: 12px, $colour: $highlightPink) {
+  color: $colour;
+  font-family: $brown-regular;
+  font-size: $font-size;
+  letter-spacing: 1px;
+  line-height: $bootstrapLineheight;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@mixin paragraph($font-size: 16px, $colour: inherit) {
+  color: $colour;
+  font-family: $tisa-pro-light;
+  font-size: $font-size;
+  line-height: $bootstrapLineheight;
+}
+
+@mixin list($font-size: 16px, $colour: inherit) {
+  color: $colour;
+  font-family: $tisa-pro-light;
+  font-size: $font-size;
+  line-height: $bootstrapLineheight;
+  font-weight: 400;
+  li {
+    margin: 10px 0;
+  }
+}
+
+@mixin link() {
+  color: $link;
+  text-decoration: underline;
+  text-decoration-skip: ink;
+  &:hover {
+    color: darken($link, 10%);
+  }
+  &:visited {
+    color: $visited;
+  }
+}
+
+@mixin bold() {
+  font-family: $tisa-pro-bold;
+  // sort firefox ignoring @font-face
+  // https://stackoverflow.com/a/19774977
+  font-weight: 400;
+}
+
+@mixin heading--sans($font-size: 20px, $colour: $primaryBlue) {
+  color: $colour;
+  font-family: $brown-regular;
+  font-size: $font-size;
+  letter-spacing: 1px;
+  line-height: $bootstrapLineheight;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1;
+}
+
+
+@mixin edge-header($color) {
+  font-size: 24px;
+  font-family: $tisa-pro-bold;
+  margin: 0 0 15px;
+  color: $color;
+  @include tablet {
+    line-height: 1;
+    font-size: 48px;
+  }
+}

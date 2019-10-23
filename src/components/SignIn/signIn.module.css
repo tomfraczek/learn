@@ -1,0 +1,8 @@
+.signInWrapper form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #dedede;
+  width: 50%;
+  padding: 20px 0;
+  margin: auto; }
